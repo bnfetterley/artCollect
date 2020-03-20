@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get '/users' => 'users#index'
   patch '/posts' => 'posts#edit'
   post '/login' => 'auth#login'
-  get '/auth' => 'auth#persist'
+  get '/persist' => 'auth#persist'
 
   delete '/posts' => 'posts#delete'
 
