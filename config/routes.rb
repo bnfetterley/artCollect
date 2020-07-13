@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :users
 
+  root 'home#index'
   get '/users' => 'users#index'
   patch '/posts' => 'posts#edit'
   post '/login' => 'auth#login'
